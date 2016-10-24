@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ProjetoController@index');
+Route::get('posts', 'ProjetoController@posts');
+Route::get('posts/{id}', 'ProjetoController@exibePost');
